@@ -7,7 +7,7 @@ function Collaborater() {
         <h2>Trusted By</h2>
         <div className='app-companies'>
             {companies.map((company)=>{
-                return <div className='company-box'> <img src={company + '.png'} alt="" /></div>
+                return <div key={Math.random()*100} className='company-box'> <img src={company + '.png'} alt="" /></div>
             })}
         </div>
         
